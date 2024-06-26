@@ -2,60 +2,77 @@
 <html>
 
 <body>
-    centered
+    The next 3 lines should be centered:
     <h1>Hi, I'm Connor Ware, and I'm a CS Student at UVA! </h1>
+    <h1>Welcome to my site!</h1>
     <p>Please hire me</p>
 
 
-    <>Contact Info<>
-            <>email: conjware@gmail.com
-                <>phone number: 757-634-6925
-                    <>resume download<>
 
-                            <>Art Information<>
-                                    <>link to new html<>
+    button
 
+    <head>
+        <style>
+            body {
+                transition: background-color 0.5s ease;
+            }
 
+            .dark-mode {
+                background-color: #121212;
+                color: white;
+            }
+        </style>
+    </head>
 
-                                            <object data=".idea/Connor Ware Resume 2.pdf" width="1000" height="1000"
-                                                type='application/pdf'></object>
+    <body>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+        <script>
+            function toggleDarkMode() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+    </body>
+
+</html>
+
+<h2>About Me</h2>
+<h3>Contact Info</h3>
+<p>Email: conjware@gmail.com</p>
+<p>Phone number: 757-634-6925</p>
+I'm not sure how to include a file for download
+<p>Resume download: </p>
+<object data=".idea/Resume.pdf" width="1000" height="1000" type='application/pdf'></object>
+
+<h3>Interests</h3>
+<p>Cybersecurity</p>
+<p>Art</p>
+<p>Political Science</p>
+<p>Programming</p>
+<p>Software Development</p>
 </body>
 
 </html>
 
-
-button
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <style>
-        body {
-            transition: background-color 0.5s ease;
-        }
-
-        .dark-mode {
-            background-color: #121212;
-            color: white;
-        }
-    </style>
-</head>
+<h2>Other pages:</h2>
+Commision info: make a link to artstuff.html
+For Potential Employers: make a link to hireme.html
+Programs: make a link to programs.html
 
 <body>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-        }
-    </script>
+    <h2>Contact Form</h2>
+    <form action="/submit_form" method="post">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 
 </html>
-
-
-nav bar
 
 <!DOCTYPE html>
 <html>
@@ -95,36 +112,10 @@ nav bar
 
 </html>
 
-contact form and inquiry thing
-
-<!DOCTYPE html>
-<html>
-
-<body>
-    <h2>Contact Form</h2>
-    <form action="/submit_form" method="post">
-        <label for="fname">First Name</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last Name</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email"><br>
-        <input type="submit" value="Submit">
-    </form>
-</body>
-
-</html>
-
-
-footer
-
-<!DOCTYPE html>
-<html>
-
 <body>
     <footer>
-        <p>Copyright &copy; 2024 Your Name</p>
-        <p><a href="mailto:youremail@domain.com">youremail@domain.com</a></p>
+        <p>Copyright &copy; 2024 Connor Ware</p>
+        <p><a href="mailto:conjware@gmail.com">conjware@gmail.com</a></p>
     </footer>
 </body>
 
